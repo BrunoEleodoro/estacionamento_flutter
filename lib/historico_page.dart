@@ -20,7 +20,7 @@ class _HistoricPageState extends State<HistoricPage> {
   void listarHistoricoBancoDeDados() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     List<dynamic> historicoDatabase =
-        jsonDecode(prefs.getString('historico').toString());
+    jsonDecode(prefs.getString('historico').toString());
 
     setState(() {
       historico = historicoDatabase;
